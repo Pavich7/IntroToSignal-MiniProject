@@ -319,7 +319,7 @@ class DTMFApp:
 
         # Fixed axes
         self.ax.set_xlim(0, 2000)
-        self.ax.set_ylim(0, 2000)
+        self.ax.set_ylim(0, 1600)
         self.ax.set_autoscale_on(False)
 
         self.ax.grid(True, alpha=0.25)
