@@ -33,7 +33,7 @@ KEYS = (
     ("*", "0", "#", "D")
 )
 
-MIN_MAGNITUDE = 25
+MIN_MAGNITUDE = 40
 FREQ = np.fft.rfftfreq(N, 1 / FS)
 BIN_HZ = FS / N
 WINDOW = np.hanning(N)
