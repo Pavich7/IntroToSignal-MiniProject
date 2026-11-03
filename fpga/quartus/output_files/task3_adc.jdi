@@ -1,0 +1,16 @@
+<sld_project_info>
+  <project>
+    <hash md5_digest_80b="f5ef14a4ada05835a719"/>
+  </project>
+  <file_info>
+    <file device="10M50DAF484C7G" path="task3_adc.sof" usercode="0xFFFFFFFF"/>
+  </file_info>
+  <sld_infos>
+    <sld_info hpath="audio_capture:capture|audio_adc:adc" name="adc">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME audio_adc HAS_SOPCINFO 1 GENERATION_ID 1791941451"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+  </sld_infos>
+</sld_project_info>

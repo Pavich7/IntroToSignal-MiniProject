@@ -1,0 +1,122 @@
+
+State Machine - |task3_adc_top|audio_capture:capture|audio_adc:adc|audio_adc_adc:adc|altera_modular_adc_control:control_internal_2|altera_modular_adc_control_fsm:u_control_fsm|ctrl_state
+Name ctrl_state.SYNC1 ctrl_state.AVRG_CNT ctrl_state.PUTRESP_PEND ctrl_state.WAIT_PEND_DLY1 ctrl_state.WAIT_PEND ctrl_state.PUTRESP_DLY3 ctrl_state.PUTRESP_DLY2 ctrl_state.PUTRESP_DLY1 ctrl_state.PUTRESP ctrl_state.CONV_DLY1 ctrl_state.CONV ctrl_state.PRE_CONV ctrl_state.GETCMD_W ctrl_state.GETCMD ctrl_state.WAIT ctrl_state.PWRUP_SOC ctrl_state.PWRUP_CH ctrl_state.PWRDWN_DONE ctrl_state.PWRDWN_TSEN ctrl_state.PWRDWN ctrl_state.IDLE 
+ctrl_state.IDLE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+ctrl_state.PWRDWN 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+ctrl_state.PWRDWN_TSEN 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+ctrl_state.PWRDWN_DONE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+ctrl_state.PWRUP_CH 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+ctrl_state.PWRUP_SOC 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+ctrl_state.WAIT 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+ctrl_state.GETCMD 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+ctrl_state.GETCMD_W 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+ctrl_state.PRE_CONV 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+ctrl_state.CONV 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+ctrl_state.CONV_DLY1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+ctrl_state.PUTRESP 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+ctrl_state.PUTRESP_DLY1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+ctrl_state.PUTRESP_DLY2 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+ctrl_state.PUTRESP_DLY3 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+ctrl_state.WAIT_PEND 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+ctrl_state.WAIT_PEND_DLY1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+ctrl_state.PUTRESP_PEND 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+ctrl_state.AVRG_CNT 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+ctrl_state.SYNC1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |task3_adc_top|audio_capture:capture|audio_adc:adc|audio_adc_adc:adc|altera_modular_adc_control:control_internal_2|altera_modular_adc_control_fsm:u_control_fsm|sync_ctrl_state
+Name sync_ctrl_state.AVRG_CNT sync_ctrl_state.WAIT_PEND_DLY1 sync_ctrl_state.PUTRESP sync_ctrl_state.CONV_DLY1 sync_ctrl_state.CONV sync_ctrl_state.GETCMD sync_ctrl_state.WAIT sync_ctrl_state.PWRUP_SOC sync_ctrl_state.PWRUP_CH sync_ctrl_state.IDLE 
+sync_ctrl_state.IDLE 0 0 0 0 0 0 0 0 0 0 
+sync_ctrl_state.PWRUP_CH 0 0 0 0 0 0 0 0 1 1 
+sync_ctrl_state.PWRUP_SOC 0 0 0 0 0 0 0 1 0 1 
+sync_ctrl_state.WAIT 0 0 0 0 0 0 1 0 0 1 
+sync_ctrl_state.GETCMD 0 0 0 0 0 1 0 0 0 1 
+sync_ctrl_state.CONV 0 0 0 0 1 0 0 0 0 1 
+sync_ctrl_state.CONV_DLY1 0 0 0 1 0 0 0 0 0 1 
+sync_ctrl_state.PUTRESP 0 0 1 0 0 0 0 0 0 1 
+sync_ctrl_state.WAIT_PEND_DLY1 0 1 0 0 0 0 0 0 0 1 
+sync_ctrl_state.AVRG_CNT 1 0 0 0 0 0 0 0 0 1 
+
+State Machine - |task3_adc_top|audio_capture:capture|audio_adc:adc|audio_adc_adc:adc|altera_modular_adc_control:control_internal_2|altera_modular_adc_control_fsm:u_control_fsm|prev_ctrl_state
+Name prev_ctrl_state.SYNC1 prev_ctrl_state.AVRG_CNT prev_ctrl_state.PUTRESP_PEND prev_ctrl_state.WAIT_PEND_DLY1 prev_ctrl_state.WAIT_PEND prev_ctrl_state.PUTRESP_DLY3 prev_ctrl_state.PUTRESP_DLY2 prev_ctrl_state.PUTRESP_DLY1 prev_ctrl_state.PUTRESP prev_ctrl_state.CONV_DLY1 prev_ctrl_state.CONV prev_ctrl_state.PRE_CONV prev_ctrl_state.GETCMD_W prev_ctrl_state.GETCMD prev_ctrl_state.WAIT prev_ctrl_state.PWRUP_SOC prev_ctrl_state.PWRUP_CH prev_ctrl_state.PWRDWN_DONE prev_ctrl_state.PWRDWN_TSEN prev_ctrl_state.PWRDWN prev_ctrl_state.IDLE 
+prev_ctrl_state.IDLE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+prev_ctrl_state.PWRDWN 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+prev_ctrl_state.PWRDWN_TSEN 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+prev_ctrl_state.PWRDWN_DONE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+prev_ctrl_state.PWRUP_CH 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+prev_ctrl_state.PWRUP_SOC 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+prev_ctrl_state.WAIT 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+prev_ctrl_state.GETCMD 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+prev_ctrl_state.GETCMD_W 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+prev_ctrl_state.PRE_CONV 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+prev_ctrl_state.CONV 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+prev_ctrl_state.CONV_DLY1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+prev_ctrl_state.PUTRESP 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+prev_ctrl_state.PUTRESP_DLY1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+prev_ctrl_state.PUTRESP_DLY2 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+prev_ctrl_state.PUTRESP_DLY3 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+prev_ctrl_state.WAIT_PEND 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+prev_ctrl_state.WAIT_PEND_DLY1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+prev_ctrl_state.PUTRESP_PEND 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+prev_ctrl_state.AVRG_CNT 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+prev_ctrl_state.SYNC1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |task3_adc_top|audio_capture:capture|audio_adc:adc|audio_adc_adc:adc|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|ctrl_state
+Name ctrl_state.SYNC1 ctrl_state.AVRG_CNT ctrl_state.PUTRESP_PEND ctrl_state.WAIT_PEND_DLY1 ctrl_state.WAIT_PEND ctrl_state.PUTRESP_DLY3 ctrl_state.PUTRESP_DLY2 ctrl_state.PUTRESP_DLY1 ctrl_state.PUTRESP ctrl_state.CONV_DLY1 ctrl_state.CONV ctrl_state.PRE_CONV ctrl_state.GETCMD_W ctrl_state.GETCMD ctrl_state.WAIT ctrl_state.PWRUP_SOC ctrl_state.PWRUP_CH ctrl_state.PWRDWN_DONE ctrl_state.PWRDWN_TSEN ctrl_state.PWRDWN ctrl_state.IDLE 
+ctrl_state.IDLE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+ctrl_state.PWRDWN 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+ctrl_state.PWRDWN_TSEN 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+ctrl_state.PWRDWN_DONE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+ctrl_state.PWRUP_CH 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+ctrl_state.PWRUP_SOC 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+ctrl_state.WAIT 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+ctrl_state.GETCMD 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+ctrl_state.GETCMD_W 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+ctrl_state.PRE_CONV 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+ctrl_state.CONV 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+ctrl_state.CONV_DLY1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+ctrl_state.PUTRESP 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+ctrl_state.PUTRESP_DLY1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+ctrl_state.PUTRESP_DLY2 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+ctrl_state.PUTRESP_DLY3 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+ctrl_state.WAIT_PEND 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+ctrl_state.WAIT_PEND_DLY1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+ctrl_state.PUTRESP_PEND 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+ctrl_state.AVRG_CNT 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+ctrl_state.SYNC1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |task3_adc_top|audio_capture:capture|audio_adc:adc|audio_adc_adc:adc|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|sync_ctrl_state
+Name sync_ctrl_state.AVRG_CNT sync_ctrl_state.WAIT_PEND_DLY1 sync_ctrl_state.PUTRESP sync_ctrl_state.CONV_DLY1 sync_ctrl_state.CONV sync_ctrl_state.GETCMD sync_ctrl_state.WAIT sync_ctrl_state.PWRUP_SOC sync_ctrl_state.PWRUP_CH sync_ctrl_state.IDLE 
+sync_ctrl_state.IDLE 0 0 0 0 0 0 0 0 0 0 
+sync_ctrl_state.PWRUP_CH 0 0 0 0 0 0 0 0 1 1 
+sync_ctrl_state.PWRUP_SOC 0 0 0 0 0 0 0 1 0 1 
+sync_ctrl_state.WAIT 0 0 0 0 0 0 1 0 0 1 
+sync_ctrl_state.GETCMD 0 0 0 0 0 1 0 0 0 1 
+sync_ctrl_state.CONV 0 0 0 0 1 0 0 0 0 1 
+sync_ctrl_state.CONV_DLY1 0 0 0 1 0 0 0 0 0 1 
+sync_ctrl_state.PUTRESP 0 0 1 0 0 0 0 0 0 1 
+sync_ctrl_state.WAIT_PEND_DLY1 0 1 0 0 0 0 0 0 0 1 
+sync_ctrl_state.AVRG_CNT 1 0 0 0 0 0 0 0 0 1 
+
+State Machine - |task3_adc_top|audio_capture:capture|audio_adc:adc|audio_adc_adc:adc|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|prev_ctrl_state
+Name prev_ctrl_state.SYNC1 prev_ctrl_state.AVRG_CNT prev_ctrl_state.PUTRESP_PEND prev_ctrl_state.WAIT_PEND_DLY1 prev_ctrl_state.WAIT_PEND prev_ctrl_state.PUTRESP_DLY3 prev_ctrl_state.PUTRESP_DLY2 prev_ctrl_state.PUTRESP_DLY1 prev_ctrl_state.PUTRESP prev_ctrl_state.CONV_DLY1 prev_ctrl_state.CONV prev_ctrl_state.PRE_CONV prev_ctrl_state.GETCMD_W prev_ctrl_state.GETCMD prev_ctrl_state.WAIT prev_ctrl_state.PWRUP_SOC prev_ctrl_state.PWRUP_CH prev_ctrl_state.PWRDWN_DONE prev_ctrl_state.PWRDWN_TSEN prev_ctrl_state.PWRDWN prev_ctrl_state.IDLE 
+prev_ctrl_state.IDLE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+prev_ctrl_state.PWRDWN 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+prev_ctrl_state.PWRDWN_TSEN 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+prev_ctrl_state.PWRDWN_DONE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+prev_ctrl_state.PWRUP_CH 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+prev_ctrl_state.PWRUP_SOC 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+prev_ctrl_state.WAIT 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+prev_ctrl_state.GETCMD 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+prev_ctrl_state.GETCMD_W 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+prev_ctrl_state.PRE_CONV 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+prev_ctrl_state.CONV 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+prev_ctrl_state.CONV_DLY1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+prev_ctrl_state.PUTRESP 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+prev_ctrl_state.PUTRESP_DLY1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+prev_ctrl_state.PUTRESP_DLY2 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+prev_ctrl_state.PUTRESP_DLY3 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+prev_ctrl_state.WAIT_PEND 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+prev_ctrl_state.WAIT_PEND_DLY1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+prev_ctrl_state.PUTRESP_PEND 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+prev_ctrl_state.AVRG_CNT 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+prev_ctrl_state.SYNC1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 

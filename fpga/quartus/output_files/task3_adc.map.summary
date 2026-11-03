@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Tue Nov  3 12:07:29 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : task3_adc
+Top-level Entity Name : task3_adc_top
+Family : MAX 10
+Total logic elements : 943
+    Total combinational functions : 667
+    Dedicated logic registers : 582
+Total registers : 582
+Total pins : 19
+Total virtual pins : 0
+Total memory bits : 24,576
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1
+UFM blocks : 0
+ADC blocks : 2

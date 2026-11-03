@@ -1,0 +1,18 @@
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\Users\HP\Documents\Codex\2026-10-11\new-chat\outputs\task3-audio-lab\fpga\quartus\audio_adc.qsys --synthesis=VHDL --output-directory=C:\Users\HP\Documents\Codex\2026-10-11\new-chat\outputs\task3-audio-lab\fpga\quartus\audio_adc\synthesis --family="MAX 10" --part=10M50DAF484C7G
+Progress: Loading quartus/audio_adc.qsys
+Progress: Reading input file
+Progress: Adding adc [altera_modular_dual_adc 21.1]
+Progress: Parameterizing module adc
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: audio_adc: Generating audio_adc "audio_adc" for QUARTUS_SYNTH
+Info: adc: "audio_adc" instantiated altera_modular_dual_adc "adc"
+Info: control_internal: "adc" instantiated altera_modular_adc_control "control_internal"
+Info: conduit_splitter_internal: "adc" instantiated altera_modular_adc_conduit_splitter "conduit_splitter_internal"
+Info: dual_sync_internal: "adc" instantiated altera_modular_adc_dual_sync "dual_sync_internal"
+Info: audio_adc: Done "audio_adc" with 5 modules, 11 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis
