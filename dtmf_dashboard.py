@@ -33,7 +33,8 @@ KEYS = (
     ("*", "0", "#", "D")
 )
 
-MIN_MAGNITUDE = 40
+MIN_MAGNITUDE_LOW = 50
+MIN_MAGNITUDE_HIGH = 150
 FREQ = np.fft.rfftfreq(N, 1 / FS)
 BIN_HZ = FS / N
 WINDOW = np.hanning(N)
@@ -61,7 +62,7 @@ def detect_dtmf(spectrum):
     low.sort(reverse=True)
     high.sort(reverse=True)
 
-    if low_best < MIN_MAGNITUDE or high_best < MIN_MAGNITUDE:
+    if low_best < MIN_MAGNITUDE_LOW or high_best < MIN_MAGNITUDE_HIGH:
         return None
 
     if low_best < low[1] * 1.35:
